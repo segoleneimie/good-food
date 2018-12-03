@@ -6,7 +6,7 @@ CLASS :------------------------------------
 
 	navPrimaire : navigation du header
 
--Pages "nos plats" et "nos activités":
+-Pages "nos plats" et "nos activitÃ©s":
 	navSecondaire : navigation secondaire
 
 
@@ -14,13 +14,18 @@ CLASS :------------------------------------
 ID : ---------------------------------------
 
 Toutes les pages :
-	-chaque élément de la barre de navigation a un id correspondant à son href
-	-tel : image du téléphone dans le footer
+	-chaque Ã©lÃ©ment de la barre de navigation a un id correspondant Ã  son href
+	-tel : image du tÃ©lÃ©phone dans le footer
 
 -Page "Nos plats" :
-	entrees : permet de revoyer à la partie "entrées" de la barre de nav secondaire
-	plats : permet de revoyer à la partie "plats" de la barre de nav secondaire
-	desserts : permet de revoyer à la partie "desserts" de la barre de nav secondaire
+	entrees : permet de revoyer Ã  la partie "entrÃ©es" depuis la barre de nav secondaire
+	plats : permet de revoyer Ã  la partie "plats" depuis la barre de nav secondaire
+	desserts : permet de revoyer Ã  la partie "desserts" depuis la barre de nav secondaire
+	
+-Page "Nos activitÃ©s" :
+	salons : permet de renvoyer Ã  la partie "salons" depuis la barre de navigation secondaire
+	ateliers : permet de renvoyer Ã  la partie "ateliers" depuis la barre de navigation secondaire
+	traiteur : permet de renvoyer Ã  la partie "traiteur" depuis la barre de navigation secondaire
 
 
 ORGANISATION : ------------------------------
@@ -34,7 +39,9 @@ ORGANISATION : ------------------------------
 	h2 : nom des plats
 	p : description des plats
 
--
-
+-Nos activitÃ©s :
+	h1 : nom des parties
+	h2 : nom des catÃ©gories (s'il y en a)
+	p : description des activitÃ©s
 
 
