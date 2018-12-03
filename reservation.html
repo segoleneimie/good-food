@@ -23,5 +23,51 @@
                 <a id="galerie" href="html/galerie.html">Notre équipe / recrutement</a>
             </nav>
         </header>
+<!--    partie coordonnées-->
+    <article>
+        <h1> Où sommes nous ?</h1>
+        <p> xx, __________ <br/> 35xxx, _____</p>
+        <img src="images/enveloppe_mail.png" alt="icone d'enveloppe"/>
+        <p> goodfood@goodfood.fr</p>
+    </article>
+<!--    partie calendrier / disponibilité-->
+    <article>
+        <h1> Disponibilités</h1>
+        <img src="images/reservations/calendrier.png"/>
+    </article>
+<!--    encart de réservation / formulaire-->
+    <article>
+        <h1>Réservation </h1>
+        <form method="post" action="traitement.php">
+            <input type="text" id="nom" name="nom" placeholder="Nom"/>
+            <input type="text" id = "prenom" name="prenom" placeholder="Prenom"/>
+            <input type="email" id ="mail" name= "mail" placeholder="Mail"/>
+            
+<!--            liste déroulante d'évènement-->
+            <select name="evenement" id="evenement">
+                <option value="empty" disabled selected>type d'évènement</option>
+                <option value="traiteur">Traiteur</option>
+                <option value="atelier">Atelier</option>
+            </select>
+            
+            <input type="date" id="date" name="date"/>
+            
+<!--            texte libre pour les précisions sur la réservation-->
+            <textarea id="precisions" name="precisions" placeholder="Pour les réservations traiteur merci de préciser ici: le nombre de convives dont le nombre d'enfants les éventuelles contraintes alimentairesle lieu"></textarea>
+            
+            <button type="submit">Réserver !</button>
+        </form>
+    </article>
+<!-- footer -->
+    <footer>
+
+        <a href="html/politiqueConf.html">Politique de confidentialité</a>
+        <div>
+            <img id="tel" src="images/tel.png"/>
+            <p>Numéro de téléphone : 02 45 61 08 83</p>
+        </div>
+        <a href="html/cookie.html">Cookies</a>
+
+    </footer>
 </body>
 </html>
