@@ -1,0 +1,40 @@
+CLASS :------------------------------------
+
+-Toutes les pages:
+	titre : "Goodfood", dans le header
+	sousTitre : "Good mood", dans le header
+
+	navPrimaire : navigation du header
+
+-Pages "nos plats" et "nos activités":
+	navSecondaire : navigation secondaire
+
+
+
+ID : ---------------------------------------
+
+Toutes les pages :
+	-chaque élément de la barre de navigation a un id correspondant à son href
+	-tel : image du téléphone dans le footer
+
+-Page "Nos plats" :
+	entrees : permet de revoyer à la partie "entrées" de la barre de nav secondaire
+	plats : permet de revoyer à la partie "plats" de la barre de nav secondaire
+	desserts : permet de revoyer à la partie "desserts" de la barre de nav secondaire
+
+
+ORGANISATION : ------------------------------
+
+-Accueil : 
+	h1 : titre au dessus du carroussel
+	p : contenu
+
+-Nos plats :
+	h1 : nom des parties
+	h2 : nom des plats
+	p : description des plats
+
+-
+
+
+
