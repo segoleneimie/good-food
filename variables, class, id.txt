@@ -35,7 +35,19 @@ ORGANISATION : ------------------------------
 	p : description des plats
 
 -
+FORMULAIRE CANDIDATURE:-------------------
+champs : 
+	-Nom : name=nom
+	-Prenom : name=prenom
+	-Mail : name=email
+	-CV : name=cv
+	-texte libre : name=motivation
 
+FORMULAIRE COLLABORATEUR:-------------------
+champs : 
+	-Nom de l'entreprise: name=nom
+	-Mail : name=email
+	-texte libre : name=projet
 
 FORMULAIRE RESERVATION : --------------------------
 
