@@ -6,7 +6,7 @@ CLASS :------------------------------------
 
 	navPrimaire : navigation du header
 
--Pages "nos plats" et "nos activitÃ©s":
+-Pages "nos plats" et "nos activités":
 	navSecondaire : navigation secondaire
 
 
@@ -14,13 +14,13 @@ CLASS :------------------------------------
 ID : ---------------------------------------
 
 Toutes les pages :
-	-chaque Ã©lÃ©ment de la barre de navigation a un id correspondant Ã  son href
-	-tel : image du tÃ©lÃ©phone dans le footer
+	-chaque élément de la barre de navigation a un id correspondant à son href
+	-tel : image du téléphone dans le footer
 
 -Page "Nos plats" :
-	entrees : permet de revoyer Ã  la partie "entrÃ©es" de la barre de nav secondaire
-	plats : permet de revoyer Ã  la partie "plats" de la barre de nav secondaire
-	desserts : permet de revoyer Ã  la partie "desserts" de la barre de nav secondaire
+	entrees : permet de revoyer à la partie "entrées" de la barre de nav secondaire
+	plats : permet de revoyer à la partie "plats" de la barre de nav secondaire
+	desserts : permet de revoyer à la partie "desserts" de la barre de nav secondaire
 
 
 ORGANISATION : ------------------------------
@@ -35,16 +35,17 @@ ORGANISATION : ------------------------------
 	p : description des plats
 
 -
+
+
 FORMULAIRE RESERVATION : --------------------------
 
 champs :
 	-Nom : id:nom name:nom;
 	-Prenom : id : prenom name:prenom;
 	-Mail : id : mail name: mail;
-	-type Ã©vÃ¨nement : id="evenement" name="evenement"
+	-type évènement : id="evenement" name="evenement"
 		* value="traiteur"
 		* value="atelier"
 	-date: id=date name=date;
-	-texte libre : id=prÃ©cisions name=precisions
-
-
+	-texte libre : id=précisions name=precisions
+	
