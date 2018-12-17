@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Develop'web"/>
     <meta name="description" content="Page de réservation de l'entreprise goodfood"/>   
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 	<title>GOOD FOOD - réservation</title>
 </head>
 <!-- Header sur toutes les pages -->
-    <header>
+ <header>
     	<img src="images/logo/barrelogo2.png"/>
         <p class="titre">Goodfood</p>
         <p class="soustitre">Good mood</p>
@@ -21,21 +21,24 @@
             <a id="equipe" href="html/notreEquipe.html">Notre équipe / recrutement</a>
             <a id="galerie" href="html/galerie.html">Notre équipe / recrutement</a>
         </nav>
-    </header>
+    </header> 
+<!--    contenant général de la page-->
+    <section class="reserv">
 <!--    partie coordonnées-->
-    <article>
+    <article class="contact">
         <h1> Où sommes nous ?</h1>
         <p> xx, __________ <br/> 35xxx, _____</p>
-        <img src="images/enveloppe_mail.png" alt="icone d'enveloppe"/>
+        <img id=img-mail src="images/enveloppe_mail.png" alt="icone d'enveloppe"/>
         <p> goodfood@goodfood.fr</p>
     </article>
 <!--    partie calendrier / disponibilité-->
     <article>
         <h1> Disponibilités</h1>
-        <img src="images/reservations/calendrier.png"/>
+        <img id=calendrier alt="calendrier" src="images/reservations/calendrier.png"/>
     </article>
+
 <!--    encart de réservation / formulaire-->
-    <article>
+    <article class="formulaire">
         <h1>Réservation </h1>
         <form method="post" action="traitement.php">
             <input type="text" id="nom" name="nom" placeholder="Nom"/>
@@ -57,6 +60,7 @@
             <button type="submit">Réserver !</button>
         </form>
     </article>
+    </section>
     
 <!-- footer -->
     <footer>

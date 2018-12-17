@@ -1,3 +1,52 @@
 #tel {
     width : 15px;
 }
+
+/*---------------*/
+/*--RESERVATION-*/
+/*--------------*/
+body{
+    background-color: #d8b666;
+}
+.reserv {
+    display: flex;
+    flex-direction: row;
+    
+}
+.reserv article{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    
+    
+}
+.contact {
+    align-content: center;
+    height: 200px;
+    text-align: center;
+    background-color: #efd242;
+    border-radius: 10px;
+    box-shadow: -3px -2px 10px grey;
+}
+#img-mail{
+    width: 20px;
+}
+#calendrier{
+    width: 350px;
+}
+.formulaire{
+    background-color: #efd242;
+    border-radius: 10px;
+    box-shadow: -3px -2px 10px grey;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+    
+   
+}
