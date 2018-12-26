@@ -1,3 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+html {
+     height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+
+/******************************************|
+|                 HEADER                   |   
+|******************************************/
+
+header {
+    background-image:url(../images/logo/barre-logo3.png);
+    background-position: center; /* Centre l'image */
+    background-size:cover; /* prend toute la place possible */
+    background-image: linear-gradient(center to left, #, white)
+}
+
+#haut {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+/*contient goodfood et good mood*/
+#titreSoustitre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(225,25,25);
+    font-family: 'Emilys Candy', cursive;
+}
+
+#titre {
+    display:flex;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+
+#soustitre {
+    display:flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+
+/******************************************|
+|                   NAV                    |   
+|******************************************/
+
+#navPrimaire {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(195,172,118);
+    padding: 10px;
+    /*séléctionnée : rgb(216,182,102);*/
+}
+
+.navSecondaire {
+/*    toujours au meme endroit*/
+    position: fixed;
+    top : 150px;
+    left : 2%;
+/*    texte en colonne*/
+    display: flex;
+    flex-direction: column;
+/*    taille des cases*/
+    width: 16%;
+    height: 15%;
+}
+/*parametre de tous les "boutons" de la nav secondaire*/
+.b {
+/*    espacés les uns des autres*/
+    margin: 15px;
+/*    permet un espace de la bordure*/
+    padding: 10% 20% 10% 20%;
+/*    bordure de 1px légèrement arondie*/
+    border: 1px solid rgb(195,172,118);
+    border-radius: 5px;
+/*    couleur pareille que la bordure*/
+    background-color: rgb(202,192,138);
+/*    texte au centre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#entree, #plat, #dessert {
+    display: flex;
+    align-items: flex-start;
+}
+
+/******************************************|
+|                  BODY                    |   
+|******************************************/
+
+body {
+    background-image: url(../images/logo/fond-degrade.png); 
+    background-position: center; /* Centre l'image */
+    background-size:cover; /* prend toute la place possible */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texte {
+    display: inline-block;
+    width: 50%;
+    margin: 25px;
+}
+
+h1 {
+    font-family: 'Emilys Candy', cursive;
+    font-weight: normal;
+    margin: 25px;
+    font-size: 30px;
+}
+h2 {
+   font-family: 'Emilys Candy', cursive;
+    font-weight: normal;
+    margin: 25px;
+    font-size: 25px;
+}
+img {
+    margin: 15px;
+    width: 40%;
+}
+
+
+/******************************************|
+|                 FOOTER                   |   
+|******************************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(195,172,118);
+    margin-top: 10px;
+    width: 100%;
+}
+
 #tel {
     width : 15px;
+    height: 15px;
 }
+
+#telNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
