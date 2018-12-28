@@ -4,24 +4,31 @@
         <meta charset="utf-8"/>
         <meta name="author" content="Develop'web"/>
         <meta name="description" content="Page d'accueil de l'entreprise goodfood"/>
-        
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="images/logo/gf.ico" />
         <title>Goodfood - Accueil</title>
     </head>
     
     <body>
 <!-- Header sur toutes les pages -->
         <header>
-            <p class="titre">Goodfood</p>
-            <p class="soustitre">Good mood</p>
+            <div id="haut">
+                    <img id="logo" src="images/logo/GF_black.jpg"/>
+                    <div id="titreSoustitre">
+                        <p id="titre">Goodfood</p>
+                        <p id="soustitre">Good mood</p>
+                    </div>
+            </div>
     <!-- Nav sur toutes les pages -->
-            <nav> 
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="accueil.html">Accueil</a>
                 <a id="plats" href="html/plats.html">Nos plats</a>
                 <a id="activite" href="html/activite.html">Nos activités</a>
                 <a id="actu" href="html/actu.html">Actualités</a>
                 <a id="contact" href="html/contact.html">Contacts / Réservation</a>
-                <a id="equipe" href="html/notreEquipe.html">Notre équipe / recrutement</a>
-                <a id="galerie" href="html/galerie.html">Notre équipe / recrutement</a>
+                <a id="equipe" href="html/notreEquipeCandidat.html">Notre équipe / recrutement</a>
+                <a id="galerie" href="html/galerie.html">Galerie</a>
             </nav>
         </header>
         
@@ -30,8 +37,11 @@
         
             <h1>Renforcer le message de vos événements par une cuisine créative à votre image !</h1>
             
-            <p>Savourez de Délicieux Produits Traiteur à Petit Prix avec GoodFood. Commandez ! Large Sélection de Produits Adaptés à vos Envies et votre Budget avec GoodFood Traiteur. Un Grand Choix de Menus. La Qualité à Prix Bas. Traiteur à la carte. Produits d'Exception. Préparé sur Place.</p>
-            <p>Retrouvez-nous sur nos salons ou apprenez à réaliser vos plats favoris. Grâce à notre équipe de professionnel plus aucun plat ne vous résistera. </p>
+            <img src="images/Plats/gratin-lasagnes-bolo.jpg"/>
+            <div class="texte">
+                <p>Savourez de Délicieux Produits Traiteur à Petit Prix avec GoodFood. Commandez ! Large Sélection de Produits Adaptés à vos Envies et votre Budget avec GoodFood Traiteur. Un Grand Choix de Menus. La Qualité à Prix Bas. Traiteur à la carte. Produits d'Exception. Préparé sur Place.</p>
+                <p>Retrouvez-nous sur nos salons ou apprenez à réaliser vos plats favoris. Grâce à notre équipe de professionnel plus aucun plat ne vous résistera. </p>
+            </div>
         
         </article>
         
@@ -39,16 +49,14 @@
         <footer>
             
             <a href="html/politiqueConf.html">Politique de confidentialité</a>
-            <div>
+            <div id="telNum">
                 <img id="tel" src="images/tel.png"/>
                 <p>Numéro de téléphone : 02 45 61 08 83</p>
             </div>
-            <a href="html/cookie.html">Cookies</a>
+            <a href="html/cookie.html">Gestion des cookies</a>
         
         </footer>
         
-
-    
     </body>
 </html>
     

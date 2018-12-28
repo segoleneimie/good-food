@@ -1,42 +1,86 @@
-<!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
         <meta name="author" content="Develop'web"/>
-        <meta name="description" content="Page de contacts et réservations"/>
-        
-        <link rel="stylesheet" href="../css/style.css"/>
-        <title>Goodfood - Contacts/Réservation</title>
+        <meta name="description" content="Page de contact"/>
+        <link rel="stylesheet" href="../css/style.css"/>        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="../images/logo/gf.ico" />
+        <title>Goodfood - Contact</title>
     </head>
     
-    <body>
+    <body class="body-uni">
 <!-- Header sur toutes les pages -->
         <header>
-            <p class="titre">Goodfood</p>
-            <p class="soustitre">Good mood</p>
+            <div id="haut">
+                    <img id="logo" src="../images/logo/GF_black.jpg"/>
+                    <div id="titreSoustitre">
+                        <p id="titre">Goodfood</p>
+                        <p id="soustitre">Good mood</p>
+                    </div>
+            </div>
     <!-- Nav sur toutes les pages -->
-            <nav> 
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="../accueil.html">Accueil</a>
                 <a id="plats" href="plats.html">Nos plats</a>
                 <a id="activite" href="activite.html">Nos activités</a>
                 <a id="actu" href="actu.html">Actualités</a>
                 <a id="contact" href="contact.html">Contacts / Réservation</a>
-                <a id="equipe" href="notreEquipe.html">Notre équipe / recrutement</a>
+                <a id="equipe" href="notreEquipeCandidat.html">Notre équipe / recrutement</a>
                 <a id="galerie" href="galerie.html">Galerie</a>
             </nav>
         </header>
-        
+<!--    contenant général de la page-->
+    <section class="reserv">
+<!--    partie coordonnées-->
+        <article class="contact">
+            <h1> Où sommes nous ?</h1>
+            <p> xx, __________ <br/> 35xxx, _____</p>
+            <div class="mail">
+            <img id=img-mail src="../images/enveloppe_mail.png" alt="icone d'enveloppe"/>
+            <p> contact@goodfood.fr</p>
+            </div>
+        </article>
+<!--    partie calendrier / disponibilité-->
+        <article class="calendrier">
+            <h1> Disponibilités</h1>
+            <img id=calendrier alt="calendrier" src="../images/reservations/calendrier.png"/>
+        </article>
+
+<!--    encart de réservation / formulaire-->
+        <article class="reservForm">
+            <h1>Réservation </h1>
+            <form method="post" action="traitement.php">
+                <input type="text" id="nom" name="nom" placeholder="Nom"/>
+                <input type="text" id = "prenom" name="prenom" placeholder="Prenom"/>
+                <input type="email" id ="mail" name= "mail" placeholder="Mail"/>
+
+    <!--            liste déroulante d'évènement-->
+                <select name="evenement" id="evenement">
+                    <option value="empty" disabled selected>type d'évènement</option>
+                    <option value="traiteur">Traiteur</option>
+                    <option value="atelier">Atelier</option>
+                </select>
+
+                <input type="date" id="date" name="date"/>
+
+    <!--            texte libre pour les précisions sur la réservation-->
+                <textarea id="precisions" name="precisions" placeholder="Pour les réservations traiteur merci de préciser ici: le nombre de convives dont le nombre d'enfants les éventuelles contraintes alimentaires le lieu"></textarea>
+                <button id="btn-reserv" type="submit">Réserver !</button>
+            </form>
+        </article>
+    </section>
+    
 <!-- footer -->
         <footer>
             
-            <a href="politiqueConf.html">Politique de confidentialité</a>
-            <div>
+            <a href="../html/politiqueConf.html">Politique de confidentialité</a>
+            <div id="telNum">
                 <img id="tel" src="../images/tel.png"/>
                 <p>Numéro de téléphone : 02 45 61 08 83</p>
             </div>
-            <a href="cookie.html">Cookies</a>
+            <a href="../html/cookie.html">Gestion des cookies</a>
         
         </footer>
-    
-    </body>
-    
+</body>
 </html>

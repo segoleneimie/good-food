@@ -1,0 +1,65 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Develop'web"/>
+        <meta name="description" content="Page pour collaborateurs"/>
+        <link rel="stylesheet" href="../css/style.css"/>        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="../images/logo/gf.ico" />
+        <title>Goodfood - Collaborateur</title>
+    </head>
+    
+    <body class="body-uni">
+<!-- Header sur toutes les pages -->
+        <header>
+            <div id="haut">
+                    <img id="logo" src="../images/logo/GF_black.jpg"/>
+                    <div id="titreSoustitre">
+                        <p id="titre">Goodfood</p>
+                        <p id="soustitre">Good mood</p>
+                    </div>
+            </div>
+    <!-- Nav sur toutes les pages -->
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="../accueil.html">Accueil</a>
+                <a id="plats" href="plats.html">Nos plats</a>
+                <a id="activite" href="activite.html">Nos activités</a>
+                <a id="actu" href="actu.html">Actualités</a>
+                <a id="contact" href="contact.html">Contacts / Réservation</a>
+                <a id="equipe" href="notreEquipeCandidat.html">Notre équipe / recrutement</a>
+                <a id="galerie" href="galerie.html">Galerie</a>
+            </nav>
+        </header>
+<!--        section contenant les articles de la page-->
+        <section class="equipe">
+<!--        partie organigramme-->
+            <article class="org">
+                <img id="organi" src="../images/organigramme1.png" alt="organigramme">
+            </article>
+<!--            formulaire collaborateurs -->
+            <article class="collab">
+<!--  pour éviter d'avoir les 2 formulaires sur la même page : création de 2 pages html identiques avec chacune le formulaire voulu donc création de liens ramenant à la page contenant le formulaire souhaité -->
+                <div ><a href="notreEquipeCandidat.html">Rejoignez-nous</a></div>
+                <div class="lienCollab"><a href="notreEquipeCollab.html"> Devenez Collaborateur </a></div>
+                <form method="post" action="#">
+                    <input type="text" name="nom" placeholder="Nom de votre entreprise"/>               
+                    <input type="email" name="email" placeholder="email"/>
+                    <textarea id="projet" name="projet" placeholder="Décrivez votre projet"></textarea>
+                    <button id="btnCollab" type="submit"> Collaborons ! </button>
+                </form>
+            </article>
+        </section>
+        <!-- footer -->
+        <footer>
+            
+            <a href="../html/politiqueConf.html">Politique de confidentialité</a>
+            <div id="telNum">
+                <img id="tel" src="../images/tel.png"/>
+                <p>Numéro de téléphone : 02 45 61 08 83</p>
+            </div>
+            <a href="../html/cookie.html">Gestion des cookies</a>
+        
+        </footer>
+    
+    </body>
+</html>

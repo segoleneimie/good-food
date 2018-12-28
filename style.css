@@ -1,40 +1,208 @@
-#tel {
-    width : 15px;
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+html {
+     height: 100%;
 }
 
-/*---------------*/
-/*--RESERVATION-*/
-/*--------------*/
-body{
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+
+/******************************************|
+|                 HEADER                   |   
+|******************************************/
+
+header {
+    background-image:url(../images/logo/barre-logo3.png);
+    background-position: center; /* Centre l'image */
+    background-size:cover; /* prend toute la place possible */
+    background-image: linear-gradient(center to left, #, white)
+}
+
+#haut {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width:50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+/*contient goodfood et good mood*/
+#titreSoustitre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(225,25,25);
+    font-family: 'Emilys Candy', cursive;
+}
+
+#titre {
+    display:flex;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+
+#soustitre {
+    display:flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+
+/******************************************|
+|                   NAV                    |   
+|******************************************/
+
+#navPrimaire {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(195,172,118);
+    padding: 10px;
+    /*séléctionnée : rgb(216,182,102);*/
+}
+
+.navSecondaire {
+/*    toujours au meme endroit*/
+    position: fixed;
+    top : 150px;
+    left : 2%;
+/*    texte en colonne*/
+    display: flex;
+    flex-direction: column;
+/*    taille des cases*/
+    width: 16%;
+    height: 15%;
+}
+/*parametre de tous les "boutons" de la nav secondaire*/
+.b {
+/*    espacés les uns des autres*/
+    margin: 15px;
+/*    permet un espace de la bordure*/
+    padding: 10% 20% 10% 20%;
+/*    bordure de 1px légèrement arondie*/
+    border: 1px solid rgb(195,172,118);
+    border-radius: 5px;
+/*    couleur pareille que la bordure*/
+    background-color: rgb(202,192,138);
+/*    texte au centre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#entree, #plat, #dessert {
+    display: flex;
+    align-items: flex-start;
+}
+/******************************************|
+|                  BODY                    |   
+|******************************************/
+
+body {
+    background-image: url(../images/logo/fond-degrade.png); 
+    background-position: center; /* Centre l'image */
+    background-size:cover; /* prend toute la place possible */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texte {
+    display: inline-block;
+    width: 50%;
+    margin: 25px;
+}
+
+h1 {
+    font-family: 'Emilys Candy', cursive;
+    font-weight: normal;
+    margin: 25px;
+    font-size: 30px;
+}
+h2 {
+   font-family: 'Emilys Candy', cursive;
+    font-weight: normal;
+    margin: 25px;
+    font-size: 25px;
+}
+img {
+    margin: 15px;
+    width: 40%;
+}
+/*---------------------*/
+/*--   Contact       --*/
+/*---------------------*/
+/*couleur du body differente des autres pages*/
+.body-uni{
     background-color: #d8b666;
 }
+/*mise en place des articles dans la page*/
 .reserv {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
     
 }
+/*mise en place des éléments à l'interieur des aricles de la page*/
 .reserv article{
     display: flex;
     flex-direction: column;
     margin: 30px;
-    
-    
 }
+/*organisation de l'article contact/coordonnées*/
 .contact {
-    align-content: center;
-    height: 200px;
+    width: 200px;
     text-align: center;
     background-color: #efd242;
     border-radius: 10px;
-    box-shadow: -3px -2px 10px grey;
+    box-shadow: -3px -2px 10px grey;    
 }
+.contact h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* organisation des coordonnées mail*/
 #img-mail{
     width: 20px;
+    height: 20px;
+}
+.mail{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+/*élément calendrier*/
+.calendrier{
+    text-align: center;
 }
 #calendrier{
-    width: 350px;
+    align-self: center;
+    width: 80%;
 }
-.formulaire{
+
+
+/******************************************|
+|        formulaire reservation            |   
+|******************************************/
+/*mise en forme de l'article contenant le formulaire*/
+.reservForm{
+    position: relative;/*pour positionner le bouton*/
     background-color: #efd242;
     border-radius: 10px;
     box-shadow: -3px -2px 10px grey;
@@ -42,11 +210,208 @@ body{
     align-items: center;
     width: 300px;
 }
-form{
+/*mise en forme du titre*/
+.reservForm h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/*mise en forme du formulaire*/
+.reservForm form{
+    width: 90%;
+}
+.reservForm input{
+    margin: 5px;
+}
+/*mise en forme du textarea */
+#precisions {
+    width:200px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+/*positionnement du bouton réserver*/
+#btn-reserv{
+    background: #efd242;
+    border:none;
+    box-shadow: 3px 2px 10px grey;
+    height: 20px;
+    width: 50%;
+    position: absolute;
+    top: 97%;
+    right: 25%;
+    
+}
+/******************************************|
+|             notreEquipe                 |   
+|******************************************/
+/*mise en place des articles dans la page*/
+.equipe {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*mise en forme partie organigramme */
+.org{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    background-color: #e4c454;
+    border-radius: 10px;
+    box-shadow: -3px -2px 10px grey;
+}
+#organi{
+    width: 80%;
+}
+/******************************************|
+|             notreEquipeCandidat          |   
+|******************************************/
+/*mise en forme formulaire candidature*/
+.candidat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-color: #efd242;
+    border-radius: 10px;
+    box-shadow: -3px -2px 10px grey;
+    width: 30%;
+    margin-top: 20px;
+    position: relative; /*pour positionner le bouton*/
+    
+}
+/*mise en forme des liens pour les formulaires*/
+.candidat a{
+    text-decoration: none;
+    color: black;
+}
+.candidat div{
+    margin-top: 3%;
+    text-align: center;
+    height: 5%;
+}
+.lienCand{
+    width: 50%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*mise en forme du formulaire*/
+.candidat form{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 80%;
+    align-content: center;
+}
+.candidat input{
+    margin-top: 3%;
+}
+
+.candidat label{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#motivations{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 170px;
+}
+
+/*mise en forme et postion du bouton */
+#btnPostule{
+    position: absolute;
+    top: 97%;
+    right: 25%;
+    width: 50%;
+    background: #efd242;
+    border:none;
+    box-shadow: 3px 2px 10px grey;
+    height: 20px;
     
+}
+/******************************************|
+|             notreEquipeCollab            |   
+|******************************************/
+.collab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-color: #efd242;
+    border-radius: 10px;
+    box-shadow: -3px -2px 10px grey;
+    width: 30%;
+    height: 60%;
+    margin-top: 20px;
+    position: relative; /*pour positionner le bouton*/
     
-   
+}
+/*mise en forme des liens pour les formulaires*/
+.collab div{
+    margin-top: 3%;
+    text-align: center;
+    height: 5%;
+}
+.collab a{
+    text-decoration: none;
+    color: black;
+}
+.lienCollab{
+    width: 50%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*mise en forme du formulaire*/
+.collab form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-content: center;
+    margin-top: 10%;
+}
+.collab input{
+    margin-top: 3%;
+}
+.collab textarea{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    height: 40%;
+}
+#btnCollab{
+    position: absolute;
+    top: 97%;
+    right: 25%;
+    width: 50%;
+    background: #efd242;
+    border:none;
+    box-shadow: 3px 2px 10px grey;
+    height: 20px;
+}
+/******************************************|
+|                 FOOTER                   |   
+|******************************************/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(195,172,118);
+    margin-top: 10px;
+    width: 100%;
+}
+
+#tel {
+    width : 15px;
+    height: 15px;
+}
+
+#telNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
