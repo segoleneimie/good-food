@@ -1,13 +1,12 @@
 CLASS :------------------------------------
 
 -Toutes les pages:
-	titre : "Goodfood", dans le header
-	sousTitre : "Good mood", dans le header
+	-texte : permet de redimentionner le texte
 
-	navPrimaire : navigation du header
+	
 
 -Pages "nos plats" et "nos activités":
-	navSecondaire : navigation secondaire
+	-b : mise en forme des "boutons" des navs secondaire
 
 
 
@@ -16,11 +15,25 @@ ID : ---------------------------------------
 Toutes les pages :
 	-chaque élément de la barre de navigation a un id correspondant à son href
 	-tel : image du téléphone dans le footer
+	-telNum : logo téléphone et texte
+
+	-titre : "Goodfood", dans le header
+	-sousTitre : "Good mood", dans le header
+
+	-navPrimaire : navigation du header
+
+	-degrad : permet le dégradé sur le background du header
+	-haut : logo + titre + sloggan
+
+
+	
 
 -Page "Nos plats" :
-	entrees : permet de revoyer à la partie "entrées" de la barre de nav secondaire
-	plats : permet de revoyer à la partie "plats" de la barre de nav secondaire
-	desserts : permet de revoyer à la partie "desserts" de la barre de nav secondaire
+	-entree : permet de revoyer à la partie "entrées" de la barre de nav secondaire
+	-plat : permet de revoyer à la partie "plats" de la barre de nav secondaire
+	-dessert : permet de revoyer à la partie "desserts" de la barre de nav secondaire
+
+	-navSecondaire : navigation entre les différentes parties de la page
 
 
 ORGANISATION : ------------------------------
@@ -34,7 +47,6 @@ ORGANISATION : ------------------------------
 	h2 : nom des plats
 	p : description des plats
 
--
 FORMULAIRE CANDIDATURE:-------------------
 champs : 
 	-Nom : name=nom
@@ -59,5 +71,7 @@ champs :
 		* value="traiteur"
 		* value="atelier"
 	-date: id=date name=date;
-	-texte libre : id=précisions name=precisions
-	
+-texte libre : id=précisions name=precisions
+
+
+

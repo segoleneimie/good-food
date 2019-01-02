@@ -3,19 +3,37 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="author" content="Develop'web"/>
-        <meta name="description" content="Galerie de l'entreprise goodfood"/>
+        <meta name="description" content="Galerie d'images de l'entreprise goodfood"/>
         
         <link rel="stylesheet" href="../css/style.css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="images/logo/gf.ico" />
+        
         <title>Goodfood - Galerie</title>
     </head>
     
     <body>
 <!-- Header sur toutes les pages -->
         <header>
-            <p class="titre">Goodfood</p>
-            <p class="soustitre">Good mood</p>
+            <!-- div pour dégrader-->
+            <div id="degrad">
+                <!-- div du bandeau au-dessus de la barre de nav-->
+                <div id="haut">
+                    <!--logo-->
+                    <img id="logo" src="../images/logo/logo.png"/>
+                    <!-- div titre + sloggan-->
+                    <div id="titreSoustitre">
+                        <!-- titre -->
+                        <p id="titre">Goodfood</p>
+                        <!-- sloggan -->
+                        <p id="soustitre">Good mood</p>
+                    </div>
+                </div>
+            </div>
     <!-- Nav sur toutes les pages -->
-            <nav> 
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="../accueil.html">Accueil</a>
                 <a id="plats" href="plats.html">Nos plats</a>
                 <a id="activite" href="activite.html">Nos activités</a>
                 <a id="actu" href="actu.html">Actualités</a>
@@ -29,13 +47,13 @@
         <footer>
             
             <a href="politiqueConf.html">Politique de confidentialité</a>
-            <div>
+            <div id="telNum">
                 <img id="tel" src="../images/tel.png"/>
                 <p>Numéro de téléphone : 02 45 61 08 83</p>
             </div>
             <a href="cookie.html">Cookies</a>
         
         </footer>
-    
+
     </body>
 </html>

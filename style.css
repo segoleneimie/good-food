@@ -10,36 +10,56 @@ body {
     min-height: 100%;
     position: relative;
 }
-a {
+a:link {
     text-decoration: none;
     color:black;
     font-family: 'Open Sans', sans-serif;
 }
+/*h2*/
+@font-face {
+    font-family: "RalphieBrown";
+    src:  url("../fonts/ralphie_brown/Ralphie Brown Regular.ttf") format("truetype");
+}
+/*h1*/
+@font-face {
+    font-family: "PingAtt";
+    src:  url("../fonts/penguin_attack/PenguinAttack.ttf") format("truetype");
+}
+
 
 /******************************************|
 |                 HEADER                   |   
 |******************************************/
 
 header {
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     flex-direction: column;
-    background-image:url(../images/logo/barre-logo3.png);
+    background-image:url(../images/logo/barre-logo.png);
+    opacity: 1;
     background-position: center; /* Centre l'image */
     background-size:cover; /* prend toute la place possible */
 }
-
+/*fais un fond dégradé sur le bandeau du header*/
+#degrad {
+    background-image: linear-gradient(to right,rgba(255,255,255,0.1),white 40%, 90% /*taille du blanc*/,rgba(255,255,255,0.1));
+}
+/*bandeau au dessus de la barre de nav*/
 #haut {
-    align-self: center;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle at left,white ,rgba(255,255,255,0.1) 120%); /*défini le dégradé en fond du logo*/   
+    align-self: center;
+    width: 100%;
 }
-
+/*logo*/
 #logo {
     width:50px;
     height: 50px;
+/*    au début de la div*/
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 /*contient goodfood et good mood*/
 #titreSoustitre {
@@ -103,19 +123,27 @@ header {
     justify-content: center;
     align-items: center;
 }
+/*texte des "boutons"*/
 #entree, #plat, #dessert {
     display: flex;
     align-items: flex-start;
 }
+
 /******************************************|
 |                  BODY                    |   
 |******************************************/
 
 body {
-/*    background-image: url(../images/logo/fond-degrade.png); image du dégradé*/
-    background-image: linear-gradient(to right,#d8b666,white,#d8b666);/*création du dégradé de fond*/
+    background-image: linear-gradient(to right,#d8b666, 10%,white, 90%,#d8b666);
     background-position: center; /* Centre l'image */
     background-size:cover; /* prend toute la place possible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+/*    pour ne pas que le texte aille dans le footer ou le header*/
+    padding-bottom: 100px;
+    padding-top: 150px;
 }
 
 article {
@@ -124,21 +152,29 @@ article {
     align-items: center;
     justify-content: space-around;
 }
-
 .texte {
     display: inline-block;
-    width: 50%;
-    margin: 25px;
+    width: 80%;
+    margin: 10px;
 }
 
 h1 {
-    font-family: 'Emilys Candy', cursive;
+    font-family: 'PingAtt', cursive;
     font-weight: normal;
-    margin: 25px;
-    font-size: 30px;
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    width: 65%;
 }
 h2 {
-   font-family: 'Emilys Candy', cursive;
+    font-family: 'RalphieBrown', cursive;
+    font-weight: normal;
+    margin: 25px;
+    font-size: 25px;
+}
+h3 {
+    font-family: 'PingAtt', cursive;
     font-weight: normal;
     margin: 25px;
     font-size: 25px;
@@ -147,6 +183,21 @@ img {
     margin: 15px;
     width: 40%;
 }
+
+/*---------------------*/
+/*--    Activités    --*/
+/*---------------------*/
+li, ul {
+    display: inline-block;
+    width: 90%;
+    margin: 10px;
+}
+/*titre des ul*/
+.tli {
+    font-weight: bold;
+    margin: 10px;
+}
+
 /*---------------------*/
 /*--   Contact       --*/
 /*---------------------*/
@@ -398,6 +449,8 @@ img {
     box-shadow: 3px 2px 10px grey;
     height: 20px;
 }
+
+
 /******************************************|
 |                 FOOTER                   |   
 |******************************************/
