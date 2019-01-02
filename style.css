@@ -10,29 +10,36 @@ body {
     min-height: 100%;
     position: relative;
 }
-
+a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /******************************************|
 |                 HEADER                   |   
 |******************************************/
 
 header {
+    display: flex;
+    flex-direction: column;
     background-image:url(../images/logo/barre-logo3.png);
     background-position: center; /* Centre l'image */
     background-size:cover; /* prend toute la place possible */
-    background-image: linear-gradient(center to left, #, white)
 }
 
 #haut {
+    align-self: center;
     display: flex;
     justify-content: center;
+    background-image: radial-gradient(circle at left,white ,rgba(255,255,255,0.1) 120%); /*défini le dégradé en fond du logo*/   
 }
 
 #logo {
     width:50px;
     height: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 /*contient goodfood et good mood*/
 #titreSoustitre {
@@ -105,7 +112,8 @@ header {
 |******************************************/
 
 body {
-    background-image: url(../images/logo/fond-degrade.png); 
+/*    background-image: url(../images/logo/fond-degrade.png); image du dégradé*/
+    background-image: linear-gradient(to right,#d8b666,white,#d8b666);/*création du dégradé de fond*/
     background-position: center; /* Centre l'image */
     background-size:cover; /* prend toute la place possible */
 }
@@ -144,7 +152,7 @@ img {
 /*---------------------*/
 /*couleur du body differente des autres pages*/
 .body-uni{
-    background-color: #d8b666;
+    background: #d8b666;
 }
 /*mise en place des articles dans la page*/
 .reserv {
