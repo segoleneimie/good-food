@@ -455,8 +455,28 @@ li, ul {
     height: 20px;
     
 }
-
-
+/******************************************|
+|                 GALERIE                  |   
+|******************************************/
+/*organisation des images*/
+.gal{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*gestion de la taille des images*/
+.gal img{
+    width: 200px;
+    height: 150px;
+}
+/*placement de la barre de filtre*/
+.filtre {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-left: 100px;
+}
 /******************************************|
 |                 FOOTER                   |   
 |******************************************/
