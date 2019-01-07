@@ -92,13 +92,9 @@ display: flex;
     justify-content: space-around;
     background-color: rgb(195,172,118);
     align-items: center;
-    
-}
-/*indique quelle page est sélectionnée avec un changement de couleur dans le menu de navigation*/
-#selection{
-    background: rgb(216,182,102);
     padding: 10px;
 }
+
 .navSecondaire {
 /*    toujours au meme endroit*/
     position: fixed;
