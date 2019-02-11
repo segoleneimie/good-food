@@ -35,9 +35,11 @@
                 <input type="date" id="date" name="date"/>
 
     <!--            texte libre pour les précisions sur la réservation-->
-                <textarea id="precisions" name="precisions" placeholder="Pour les réservations traiteur merci de préciser ici: le nombre de convives dont le nombre d'enfants les éventuelles contraintes alimentaires le lieu"></textarea>
+                <textarea id="precisions" name="precisions" placeholder="Pour les réservations traiteur merci de préciser ici: le nombre de convives dont le nombre d'enfants les éventuelles contraintes alimentaires et le lieu"></textarea>
+    <!--                Bouton réserver                 -->
                 <button id="btn-reserv" type="submit">Réserver !</button>
             </form>
+            
         </article>
 </section>
         
