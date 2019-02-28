@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Develop'web"/>
+        <meta name="description" content="Page dde présentation de l'équipe de l'entreprise goodfood ainsi que formulaire donnant la possibilité de rejoindre ses membres"/>
+        
+        <link rel="stylesheet" href="../css/style.css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="../images/logo/gf.ico" />
+        
+        <title>Goodfood - Notre équipe</title>
+    </head>
+    
+    <body>
+<!-- Header sur toutes les pages -->
+        <header>
+            <!-- div pour dégrader-->
+            <div id="degrad">
+                <!-- div du bandeau au-dessus de la barre de nav-->
+                <div id="haut">
+                    <!--logo-->
+                    <img id="logo" src="../images/logo/logo.png"/>
+                    <!-- div titre + sloggan-->
+                    <div id="titreSoustitre">
+                        <!-- titre -->
+                        <p id="titre">Goodfood</p>
+                        <!-- sloggan -->
+                        <p id="soustitre">Good mood</p>
+                    </div>
+                </div>
+            </div>
+    <!-- Nav sur toutes les pages -->
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="../accueil.html">Accueil</a>
+                <a id="plats" href="plats.html">Nos plats</a>
+                <a id="activite" href="activite.html">Nos activités</a>
+                <a id="actu" href="actu.html">Actualités</a>
+                <a id="contact" href="contact.html">Contacts / Réservation</a>
+                <a id="equipe" href="notreEquipe.html">Notre équipe / recrutement</a>
+                <a id="galerie" href="galerie.html">Galerie</a>
+            </nav>
+        </header>
+        
+<!--        section contenant les articles de la page-->
+        <section class="equipe">
+<!--        partie organigramme-->
+            <article class="org">
+                <img id="organi" src="../images/organigramme1.png" alt="organigramme">
+
+            </article>
+    <!--        formulaire candidature-->
+            <article class="candidat">
+                <div class="lienCand">Rejoignez-nous</div>
+                <div >Devenez Collaborateur</div>
+                <form method="post" action="#" enctype="multipart/form-data">
+                    <input type="text" name="nom" placeholder="Nom" required />
+                    <input type="text" name="prenom" placeholder="Prenom" required/>
+                    <input type="email" name="email" placeholder="email" required/>
+                    <label for="cv"> Votre CV
+                        <input type="file" name="cv" id="cv" required/>
+                    </label>
+                    <textarea id="motivations" name="motivations" placeholder="Décrivez vos motivitations" required></textarea>
+                    <button id="btnPostule" type="submit"> Postulez !</button>
+                </form>
+            </article>
+            <!--        formulaire collaborateur-->
+            <article class="collab">
+                <div >Rejoignez-nous</div>
+                <div class="lienCollab"> Devenez Collaborateur </div>
+                <form method="post" action="#">
+                    <input type="text" name="nom" placeholder="Nom de votre entreprise" required/>
+                    <input type="email" name="email" placeholder="email"required/>
+                    <textarea id="projet" name="projet" placeholder="Décrivez votre projet" required></textarea>
+                    <button id="btnCollab" type="submit"> Collaborons ! </button>
+                </form>
+            </article>
+        </section>
+        
+<!-- footer -->
+        <footer>
+            
+            <a href="politiqueConf.html">Politique de confidentialité</a>
+            <div id="telNum">
+                <img id="tel" src="../images/tel.png"/>
+                <p>Numéro de téléphone : 02 45 61 08 83</p>
+            </div>
+            <a href="cookie.html">Cookies</a>
+        
+        </footer>
+<script src="../js/script.js"></script>
+    </body>
+</html>

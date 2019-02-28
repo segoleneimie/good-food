@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Develop'web"/>
+        <meta name="description" content="Page de gestion des cookies de l'entreprise goodfood"/>
+        
+        <link rel="stylesheet" href="../css/style.css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
+        <link rel="icon" href="images/logo/gf.ico" />
+        
+        <title>Goodfood - Gestion des cookies</title>
+    </head>
+    
+    <body>
+<!-- Header sur toutes les pages -->
+        <header>
+            <!-- div pour dégrader-->
+            <div id="degrad">
+                <!-- div du bandeau au-dessus de la barre de nav-->
+                <div id="haut">
+                    <!--logo-->
+                    <img id="logo" src="../images/logo/logo.png"/>
+                    <!-- div titre + sloggan-->
+                    <div id="titreSoustitre">
+                        <!-- titre -->
+                        <p id="titre">Goodfood</p>
+                        <!-- sloggan -->
+                        <p id="soustitre">Good mood</p>
+                    </div>
+                </div>
+            </div>
+    <!-- Nav sur toutes les pages -->
+            <nav id="navPrimaire"> 
+                <a id="accueil" href="../accueil.html">Accueil</a>
+                <a id="plats" href="plats.html">Nos plats</a>
+                <a id="activite" href="activite.html">Nos activités</a>
+                <a id="actu" href="actu.html">Actualités</a>
+                <a id="contact" href="contact.html">Contacts / Réservation</a>
+                <a id="equipe" href="notreEquipe.html">Notre équipe / recrutement</a>
+                <a id="galerie" href="galerie.html">Galerie</a>
+            </nav>
+        </header>
+        <!-- formulaire de connexion -->
+        <h1>Connexion administrateur</h1>
+        <div class="log">
+            <form method="post" action="traitement-login.php">
+                <input type="text" id="identifiant" name="identifiant" placeholder="Identifiant" required />
+                <input type="password" id = "mdp" name="mdp" placeholder="Mot de passe" required/>
+                <button id="connexion">Connexion</button>
+        </div>
+<!-- footer -->
+        <footer>
+            
+            <a href="politiqueConf.html">Politique de confidentialité</a>
+            <div id="telNum">
+                <img id="tel" src="../images/tel.png"/>
+                <p>Numéro de téléphone : 02 45 61 08 83</p>
+            </div>
+            <a href="cookie.html">Cookies</a>
+        
+        </footer>
+
+    </body>
+</html>
