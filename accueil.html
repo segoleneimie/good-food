@@ -5,12 +5,17 @@
         <meta name="author" content="Develop'web"/>
         <meta name="description" content="Page d'accueil de l'entreprise goodfood"/>
         
+        <!-- style du carousel -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <!-- ajout le  slick-theme.css pour le style par défaut -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <!--        liens au css et à la police titre + sloggan-->
         <link rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Emilys+Candy|Rochester" rel="stylesheet"> 
 <!--        met une icone sur l'onglet-->
         <link rel="icon" href="images/logo/gf.ico" />
-<!--        nom de la page-->
+
+        <!--        nom de la page-->
         <title>Goodfood - Accueil</title>
     </head>
     
@@ -46,7 +51,12 @@
         
             <h1>Renforcer le message de vos événements par une cuisine créative à votre image !</h1>
             
-            <img src="images/Plats/gratin-lasagnes-bolo.jpg"/>
+            <div class="carrousel">
+              <img src="images/Plats/gratin-lasagnes-bolo.jpg"/>
+              <img src="images/Activites/Chamallow.png"/>
+              <img src="images/Activites/mickey.jpg"/>
+            </div>
+            
             <div class="texte">
                 <p>Savourez de Délicieux Produits Traiteur à Petit Prix avec GoodFood. Commandez ! Large Sélection de Produits Adaptés à vos Envies et votre Budget avec GoodFood Traiteur. Un Grand Choix de Menus. La Qualité à Prix Bas. Traiteur à la carte. Produits d'Exception. Préparé sur Place.</p>
                 <p>Retrouvez-nous sur nos salons ou apprenez à réaliser vos plats favoris. Grâce à notre équipe de professionnel plus aucun plat ne vous résistera. </p>
@@ -67,6 +77,15 @@
             <a href="html/cookie.html">Gestion des cookies</a>
         
         </footer>
-        
+        <script
+              src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="js/backToTop.js"></script>
+        <script src="js/carousel.js"></script>
+    
+  </script>
+
     </body>
 </html>
