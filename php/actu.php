@@ -7,7 +7,7 @@
             Préservation des liens entre la terre et l’assiette...</p>
 
 
-            <h1>Pédagogique d’appropriation concrète par tous</h1>
+            <h1>Pédagogie d’appropriation concrète par tous</h1>
 
             <p class="texte">L’atelier-cuisine est un outil pédagogique irremplaçable, de par son
             caractère très concret : chacun participe, « met la main à la pâte », et s’approprie les idées.

@@ -1,5 +1,4 @@
-<?php 
-session_start();
+<?php session_start();
 include ('header.php') ?>
 <a href="deconnexion.php">Déconnectez vous!</a>
 

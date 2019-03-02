@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php session_start();
+include('header.php') ?>
 <!-- barre de nav secondaire -->
         <nav class="navSecondaire">
         
