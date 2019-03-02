@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <?php $page = "back_recrutement"; ?>
 <?php include('header.php');?>
         
