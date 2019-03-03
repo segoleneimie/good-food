@@ -13,7 +13,7 @@
         <title>Goodfood - Notre équipe</title>
     </head>
     
-    <body>
+    <body class="body-uni" >
 <!-- Header sur toutes les pages -->
         <header>
             <!-- div pour dégrader-->
@@ -32,14 +32,35 @@
                 </div>
             </div>
     <!-- Nav sur toutes les pages -->
-            <nav id="navPrimaire"> 
-                <a id="accueil" href="../accueil.html">Accueil</a>
-                <a id="plats" href="plats.html">Nos plats</a>
-                <a id="activite" href="activite.html">Nos activités</a>
-                <a id="actu" href="actu.html">Actualités</a>
-                <a id="contact" href="contact.html">Contacts / Réservation</a>
-                <a id="equipe" href="notreEquipe.html">Notre équipe / recrutement</a>
-                <a id="galerie" href="galerie.html">Galerie</a>
+            <nav id="navPrimaire">
+                    <div class="onglet">
+                        <a id="accueil" href="../accueil.html">Accueil</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="plats" href="plats.html">Nos plats</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="activite" href="activite.html">Nos activités</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="actu" href="actu.html">Actualités</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="contact" href="contact.html">Contacts / Réservation</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="equipe" href="notreEquipe.html">Notre équipe / recrutement</a>
+                    </div>
+
+                    <div class="onglet">
+                        <a id="galerie" href="galerie.html">Galerie</a>
+                    </div>
+               
             </nav>
         </header>
         
@@ -54,7 +75,7 @@
             <article class="candidat">
                 <div class="lienCand">Rejoignez-nous</div>
                 <div >Devenez Collaborateur</div>
-                <form method="post" action="#" enctype="multipart/form-data">
+                <form method="post" action="traitement-candidat.php" enctype="multipart/form-data">
                     <input type="text" name="nom" placeholder="Nom" required />
                     <input type="text" name="prenom" placeholder="Prenom" required/>
                     <input type="email" name="email" placeholder="email" required/>
@@ -69,7 +90,7 @@
             <article class="collab">
                 <div >Rejoignez-nous</div>
                 <div class="lienCollab"> Devenez Collaborateur </div>
-                <form method="post" action="#">
+                <form method="post" action="traitement-collab.php">
                     <input type="text" name="nom" placeholder="Nom de votre entreprise" required/>
                     <input type="email" name="email" placeholder="email"required/>
                     <textarea id="projet" name="projet" placeholder="Décrivez votre projet" required></textarea>
@@ -89,6 +110,9 @@
             <a href="cookie.html">Cookies</a>
         
         </footer>
+        <!-- bouton remonte vers le haut -->
+        <img src=../images/fleche.png alt="retour vers le haut" onclick="topFunction()" id="backToTop"/>
 <script src="../js/script.js"></script>
+ <script src="../js/backToTop.js"></script>
     </body>
 </html>
